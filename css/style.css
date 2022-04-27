@@ -143,11 +143,11 @@ html {
 /* How It work */
 /* *********** */
 
-.section-featured{
+.section-featured {
   padding: 4.8rem 0 3.2rem 0;
 }
 
-.featured-in{
+.featured-in {
   font-size: 1.4rem;
   text-transform: uppercase;
   letter-spacing: 0.75px;
@@ -157,7 +157,7 @@ html {
   color: #888;
 }
 
-.logos{
+.logos {
   display: flex;
   justify-content: space-around;
 }
@@ -195,7 +195,8 @@ html {
   justify-content: center;
 }
 
-.step-img-box::before, .step-img-box::after {
+.step-img-box::before,
+.step-img-box::after {
   content: '';
   display: block;
 
@@ -216,7 +217,6 @@ html {
 }
 
 .step-img-box::after {
-
   width: 45%;
   padding-bottom: 45%;
   background-color: #fae5d3;
@@ -236,23 +236,29 @@ html {
   padding: 9.6rem 0;
 }
 
-.meal{
+.meal {
   box-shadow: 0 2.4rem 4.8rem rgba(0, 0, 0, 0.075);
   border-radius: 11px;
   overflow: hidden;
+  transition: all 0.4s;
 }
 
-.meal-content{
+.meal:hover{
+  transform: translateY(-1.2rem);
+  box-shadow: 0 3.2rem 6.4rem rgba(0, 0, 0, 0.06);
+}
+
+.meal-content {
   padding: 3.2rem 4.8rem 4.8rem 4.8rem;
 }
 
-.meal-tags{
+.meal-tags {
   margin-bottom: 1.2rem;
   display: flex;
   gap: 0.4rem;
 }
 
-.tag{
+.tag {
   display: inline-block;
   padding: 0.4rem 0.8rem;
   font-size: 1.2rem;
@@ -262,46 +268,71 @@ html {
   font-weight: 600;
 }
 
-.tag--vegetarian{
+.tag--vegetarian {
   background-color: #51cf66;
 }
-.tag--vegan{
+.tag--vegan {
   background-color: #94d82d;
 }
-.tag--paleo{
+.tag--paleo {
   background-color: #ffd43d;
 }
 
-.meal-title{
+.meal-title {
   font-size: 2rem;
   color: #333;
   font-weight: 600;
   margin-bottom: 3.2rem;
 }
 
-.meal-attributes{
+.meal-attributes {
   list-style: none;
   display: flex;
   flex-direction: column;
 }
 
-.meal-attribute{
+.meal-attribute {
   font-size: 1.8rem;
   display: flex;
   align-items: center;
   gap: 1.6rem;
 }
 
-.meal-img{
+.meal-img {
   width: 100%;
 }
 
-.meal-icon{
+.meal-icon {
   height: 2.4rem;
   width: 2.4rem;
   color: #e67e22;
 }
 
-strong{
+strong {
   font-weight: 600;
+}
+
+.all-recipes{
+  text-align: center;
+  font-size: 1.8rem;
+}
+
+.list {
+  list-style: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.6rem;
+}
+
+.list-item {
+  font-size: 1.8rem;
+  display: flex;
+  align-items: center;
+  gap: 1.6rem;
+}
+
+.list-icon {
+  width: 3rem;
+  height: 3rem;
+  color: #e67e22;
 }
