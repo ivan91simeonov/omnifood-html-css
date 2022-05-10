@@ -11,9 +11,9 @@
 
 }
 
-.grid:last-child{
+/* .grid:last-child{
   margin-bottom: 0;
-}
+} */
 
 .grid:not(last-child) {
   margin-bottom: 9.6rem;
